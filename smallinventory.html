@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallInventory Privacy Policy | 小庫存隱私政策</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-dark: #1b5e20;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --border: #dadce0;
+            --accent: #e8f5e9;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), #66bb6a);
+            color: white;
+            padding: 48px 24px 36px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+        .app-icon { font-size: 48px; margin-bottom: 12px; }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .tab {
+            padding: 14px 32px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .tab:hover { color: var(--primary); background: var(--accent); }
+        .tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 20px 64px; }
+        .content { display: none; }
+        .content.active { display: block; }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            border: 1px solid var(--border);
+        }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section h2 .icon { font-size: 22px; }
+        .section p { margin-bottom: 12px; color: var(--text); }
+        .section ul { padding-left: 24px; margin-bottom: 12px; }
+        .section li { margin-bottom: 8px; color: var(--text); }
+        .section li strong { color: var(--text); }
+        .highlight {
+            background: var(--accent);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .not-collected {
+            background: #e8f5e9;
+            border-left: 4px solid #43a047;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 14px;
+            color: #1b5e20;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 600px) {
+            .header { padding: 36px 16px 28px; }
+            .header h1 { font-size: 22px; }
+            .tab { padding: 12px 20px; font-size: 14px; }
+            .section { padding: 20px 18px; }
+            .container { padding: 20px 12px 48px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-icon">📦</div>
+    <h1>SmallInventory 小庫存</h1>
+    <p>Privacy Policy | 隱私政策</p>
+</div>
+
+<div class="tabs">
+    <div class="tab active" onclick="switchTab('zh')">繁體中文</div>
+    <div class="tab" onclick="switchTab('en')">English</div>
+</div>
+
+<!-- 繁體中文 -->
+<div class="container">
+<div id="zh" class="content active">
+    <div class="section">
+        <p style="text-align:center;color:var(--text-secondary);font-size:14px;">最後更新日期：2026 年 3 月 25 日</p>
+        <p>JasonWu（以下簡稱「我們」）開發了 SmallInventory 小庫存（以下簡稱「本應用程式」）。本隱私政策旨在說明我們如何收集、使用、儲存及保護您的資訊。使用本應用程式即表示您同意本隱私政策的條款。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📋</span>我們收集哪些資訊</h2>
+        <p>本應用程式可能收集或處理以下資訊：</p>
+        <ul>
+            <li><strong>商品資訊</strong>：包括商品名稱、SKU、價格、庫存數量等，儲存於裝置本地 SQLite 資料庫。</li>
+            <li><strong>商品照片</strong>：您拍攝或選取的商品照片，儲存於裝置本地。</li>
+            <li><strong>進出貨記錄</strong>：商品的庫存變動紀錄，儲存於裝置本地。</li>
+            <li><strong>AI 辨識資料</strong>：當您使用 AI 商品辨識功能時，商品照片將傳送至 Google Gemini API 進行分析。</li>
+            <li><strong>訂閱付款資訊</strong>：透過 Google Play 計費系統處理，我們不直接存取您的付款詳細資訊。</li>
+            <li><strong>語言偏好設定</strong>：您選擇的應用程式顯示語言。</li>
+        </ul>
+        <div class="not-collected">
+            <strong>我們不收集：</strong>位置資訊、聯絡人資料、瀏覽記錄。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔍</span>我們如何使用您的資訊</h2>
+        <ul>
+            <li>提供商品管理、庫存追蹤及進出貨記錄功能。</li>
+            <li>透過 AI 辨識商品照片以自動填入商品資訊。</li>
+            <li>處理訂閱與付款（透過 Google Play）。</li>
+            <li>記憶您的語言偏好以提供更好的使用體驗。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔗</span>第三方服務</h2>
+        <p>本應用程式使用以下第三方服務：</p>
+        <ul>
+            <li><strong>Google Gemini API</strong>：用於 AI 商品照片辨識與分析。<br><a href="https://ai.google.dev/terms" target="_blank">Google AI 服務條款</a></li>
+            <li><strong>Google Play 計費服務</strong>：用於處理應用程式內購與訂閱。<br><a href="https://policies.google.com/privacy" target="_blank">Google 隱私政策</a></li>
+        </ul>
+        <div class="highlight">
+            這些第三方服務有各自的隱私政策，我們建議您閱讀其相關條款。我們對第三方服務如何處理您的資料不承擔責任。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔒</span>資料儲存與安全</h2>
+        <ul>
+            <li>所有商品資訊、照片及進出貨記錄均儲存於您的裝置本地 SQLite 資料庫中。</li>
+            <li>傳送至 Gemini API 的照片透過加密連線（HTTPS/TLS）傳輸。</li>
+            <li>我們不在自己的伺服器上儲存您的商品資料或照片。</li>
+            <li>付款資訊由 Google Play 安全處理，我們無法存取您的信用卡資訊。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">👶</span>兒童隱私</h2>
+        <p>本應用程式不針對 13 歲以下兒童設計，我們不會故意收集 13 歲以下兒童的個人資訊。如果我們發現無意中收集了兒童的個人資訊，將會立即採取措施刪除相關資料。如果您認為您的孩子向我們提供了個人資訊，請透過下方聯絡方式與我們聯繫。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">⚖️</span>您的權利</h2>
+        <p>根據適用的資料保護法規（包括 GDPR），您擁有以下權利：</p>
+        <ul>
+            <li><strong>存取權</strong>：您有權了解我們處理了哪些與您相關的資料。</li>
+            <li><strong>更正權</strong>：您有權更正不正確的個人資料。</li>
+            <li><strong>刪除權</strong>：您有權要求刪除您的個人資料。</li>
+            <li><strong>可攜權</strong>：您有權以通用格式取得您的資料。</li>
+            <li><strong>反對權</strong>：您有權反對我們處理您的資料。</li>
+            <li><strong>撤回同意</strong>：您可以隨時撤回先前給予的同意。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🗑️</span>資料刪除方式</h2>
+        <p>您可以透過以下方式刪除您的資料：</p>
+        <ul>
+            <li>在應用程式內直接刪除任何商品資料、照片及進出貨記錄。</li>
+            <li>使用應用程式內的「清除所有資料」功能一次清除全部資料。</li>
+            <li>解除安裝應用程式將移除所有本地儲存的資料（包含 SQLite 資料庫與照片）。</li>
+            <li>如需刪除第三方服務中可能暫存的資料，請直接聯繫對應的服務提供商。</li>
+            <li>您也可以透過下方電子郵件聯繫我們，要求刪除與您帳戶相關的所有資料。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📝</span>隱私政策變更</h2>
+        <p>我們可能會不定期更新本隱私政策。任何變更將在本頁面發布，並更新「最後更新日期」。重大變更時，我們將透過應用程式內通知告知您。建議您定期查閱本隱私政策以了解最新資訊。繼續使用本應用程式即表示您接受更新後的隱私政策。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📧</span>聯絡我們</h2>
+        <p>如果您對本隱私政策有任何疑問或建議，請透過以下方式聯繫我們：</p>
+        <ul>
+            <li><strong>開發者</strong>：JasonWu</li>
+            <li><strong>電子郵件</strong>：<a href="mailto:open5588@gmail.com">open5588@gmail.com</a></li>
+            <li><strong>地點</strong>：Taipei, Taiwan</li>
+        </ul>
+    </div>
+</div>
+
+<!-- English -->
+<div id="en" class="content">
+    <div class="section">
+        <p style="text-align:center;color:var(--text-secondary);font-size:14px;">Last Updated: March 25, 2026</p>
+        <p>JasonWu ("we", "us", or "our") developed the SmallInventory app (the "App"). This Privacy Policy explains how we collect, use, store, and protect your information. By using the App, you agree to the terms of this Privacy Policy.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📋</span>Information We Collect</h2>
+        <p>The App may collect or process the following information:</p>
+        <ul>
+            <li><strong>Product Information</strong>: Including product name, SKU, price, and stock quantity, stored in the local SQLite database on your device.</li>
+            <li><strong>Product Photos</strong>: Photos you take or select for products, stored locally on your device.</li>
+            <li><strong>Inventory Records</strong>: Stock movement records for products, stored locally on your device.</li>
+            <li><strong>AI Recognition Data</strong>: When you use the AI product recognition feature, product photos are sent to the Google Gemini API for analysis.</li>
+            <li><strong>Subscription Payment Information</strong>: Processed through the Google Play billing system. We do not directly access your payment details.</li>
+            <li><strong>Language Preferences</strong>: Your chosen app display language.</li>
+        </ul>
+        <div class="not-collected">
+            <strong>We do NOT collect:</strong> location data, contacts, or browsing history.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔍</span>How We Use Your Information</h2>
+        <ul>
+            <li>Provide product management, inventory tracking, and stock movement recording features.</li>
+            <li>Analyze product photos via AI to automatically populate product information.</li>
+            <li>Process subscriptions and payments (via Google Play).</li>
+            <li>Remember your language preferences for a better user experience.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔗</span>Third-Party Services</h2>
+        <p>The App uses the following third-party services:</p>
+        <ul>
+            <li><strong>Google Gemini API</strong>: For AI product photo recognition and analysis.<br><a href="https://ai.google.dev/terms" target="_blank">Google AI Terms of Service</a></li>
+            <li><strong>Google Play Billing</strong>: For processing in-app purchases and subscriptions.<br><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        </ul>
+        <div class="highlight">
+            These third-party services have their own privacy policies. We recommend reviewing their respective terms. We are not responsible for how third-party services handle your data.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔒</span>Data Storage & Security</h2>
+        <ul>
+            <li>All product information, photos, and inventory records are stored in the local SQLite database on your device.</li>
+            <li>Photos sent to the Gemini API are transmitted via encrypted connections (HTTPS/TLS).</li>
+            <li>We do not store your product data or photos on our servers.</li>
+            <li>Payment information is securely handled by Google Play. We cannot access your credit card details.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">👶</span>Children's Privacy</h2>
+        <p>The App is not designed for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected personal information from a child, we will take immediate steps to delete such data. If you believe your child has provided personal information to us, please contact us using the information below.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">⚖️</span>Your Rights</h2>
+        <p>Under applicable data protection regulations (including GDPR), you have the following rights:</p>
+        <ul>
+            <li><strong>Right of Access</strong>: You have the right to know what data we process about you.</li>
+            <li><strong>Right to Rectification</strong>: You have the right to correct inaccurate personal data.</li>
+            <li><strong>Right to Erasure</strong>: You have the right to request deletion of your personal data.</li>
+            <li><strong>Right to Portability</strong>: You have the right to receive your data in a common format.</li>
+            <li><strong>Right to Object</strong>: You have the right to object to our processing of your data.</li>
+            <li><strong>Right to Withdraw Consent</strong>: You may withdraw previously given consent at any time.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🗑️</span>Data Deletion</h2>
+        <p>You can delete your data through the following methods:</p>
+        <ul>
+            <li>Delete any product data, photos, and inventory records directly within the App.</li>
+            <li>Use the "Clear All Data" function within the App to remove all data at once.</li>
+            <li>Uninstalling the App will remove all locally stored data (including the SQLite database and photos).</li>
+            <li>To delete data that may be temporarily cached by third-party services, please contact the respective service providers directly.</li>
+            <li>You may also contact us via the email below to request deletion of all data associated with your account.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📝</span>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. For significant changes, we will notify you through in-app notifications. We recommend reviewing this Privacy Policy periodically. Continued use of the App constitutes acceptance of the updated Privacy Policy.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📧</span>Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us:</p>
+        <ul>
+            <li><strong>Developer</strong>: JasonWu</li>
+            <li><strong>Email</strong>: <a href="mailto:open5588@gmail.com">open5588@gmail.com</a></li>
+            <li><strong>Location</strong>: Taipei, Taiwan</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    &copy; 2026 JasonWu. All rights reserved.
+</div>
+
+<script>
+    function switchTab(lang) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>

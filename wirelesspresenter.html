@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WirelessPresenter Privacy Policy | 無線簡報筆隱私政策</title>
+    <style>
+        :root {
+            --primary: #e65100;
+            --primary-dark: #bf360c;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --border: #dadce0;
+            --accent: #fff3e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), #ff9800);
+            color: white;
+            padding: 48px 24px 36px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+        .app-icon { font-size: 48px; margin-bottom: 12px; }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .tab {
+            padding: 14px 32px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .tab:hover { color: var(--primary); background: var(--accent); }
+        .tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 20px 64px; }
+        .content { display: none; }
+        .content.active { display: block; }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            border: 1px solid var(--border);
+        }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section h2 .icon { font-size: 22px; }
+        .section p { margin-bottom: 12px; color: var(--text); }
+        .section ul { padding-left: 24px; margin-bottom: 12px; }
+        .section li { margin-bottom: 8px; color: var(--text); }
+        .section li strong { color: var(--text); }
+        .highlight {
+            background: var(--accent);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .not-collected {
+            background: #e6f4ea;
+            border-left: 4px solid #34a853;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 14px;
+            color: #137333;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 600px) {
+            .header { padding: 36px 16px 28px; }
+            .header h1 { font-size: 22px; }
+            .tab { padding: 12px 20px; font-size: 14px; }
+            .section { padding: 20px 18px; }
+            .container { padding: 20px 12px 48px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-icon">📡</div>
+    <h1>WirelessPresenter 無線簡報筆</h1>
+    <p>Privacy Policy | 隱私政策</p>
+</div>
+
+<div class="tabs">
+    <div class="tab active" onclick="switchTab('zh')">繁體中文</div>
+    <div class="tab" onclick="switchTab('en')">English</div>
+</div>
+
+<!-- 繁體中文 -->
+<div class="container">
+<div id="zh" class="content active">
+    <div class="section">
+        <p style="text-align:center;color:var(--text-secondary);font-size:14px;">最後更新日期：2026 年 3 月 25 日</p>
+        <p>JasonWu（以下簡稱「我們」）開發了 WirelessPresenter 無線簡報筆（以下簡稱「本應用程式」）。本隱私政策旨在說明我們如何收集、使用、儲存及保護您的資訊。使用本應用程式即表示您同意本隱私政策的條款。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📋</span>我們收集哪些資訊</h2>
+        <p>本應用程式可能收集或處理以下資訊：</p>
+        <ul>
+            <li><strong>區域網路連線資訊</strong>：您的 WiFi IP 位址，僅用於與電腦端配對連線，不儲存不傳送至外部伺服器。</li>
+            <li><strong>感測器資料</strong>：陀螺儀及加速度計資料，僅用於雷射筆指標功能，不儲存不傳送。</li>
+            <li><strong>訂閱付款資訊</strong>：透過 Google Play 計費系統處理，我們不直接存取您的付款詳細資訊。</li>
+            <li><strong>語言偏好設定</strong>：您選擇的應用程式顯示語言。</li>
+        </ul>
+        <div class="not-collected">
+            <strong>我們不收集：</strong>位置資訊、聯絡人資料、麥克風音訊、相機影像。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔍</span>我們如何使用您的資訊</h2>
+        <ul>
+            <li>透過區域網路建立手機與電腦之間的連線，實現簡報遙控功能。</li>
+            <li>利用感測器資料驅動雷射筆指標功能。</li>
+            <li>處理訂閱與付款（透過 Google Play）。</li>
+            <li>記憶您的語言偏好以提供更好的使用體驗。</li>
+        </ul>
+        <div class="highlight">
+            本應用程式不會將任何資料傳送至外部伺服器。所有功能均在區域網路內運作。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔗</span>第三方服務</h2>
+        <p>本應用程式使用以下第三方服務：</p>
+        <ul>
+            <li><strong>Google Play 計費服務</strong>：用於處理應用程式內購與訂閱。<br><a href="https://policies.google.com/privacy" target="_blank">Google 隱私政策</a></li>
+        </ul>
+        <div class="highlight">
+            本應用程式不使用任何雲端 API 或分析服務。除了 Google Play 計費外，不會與任何第三方分享您的資料。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔒</span>資料儲存與安全</h2>
+        <ul>
+            <li>本應用程式不在裝置上永久儲存任何敏感資料。</li>
+            <li>WiFi IP 位址僅在連線期間使用，斷線後即捨棄。</li>
+            <li>感測器資料為即時處理，不會儲存至裝置或傳送至任何伺服器。</li>
+            <li>區域網路通訊僅在您的本地網路環境中進行。</li>
+            <li>付款資訊由 Google Play 安全處理，我們無法存取您的信用卡資訊。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">👶</span>兒童隱私</h2>
+        <p>本應用程式不針對 13 歲以下兒童設計，我們不會故意收集 13 歲以下兒童的個人資訊。如果我們發現無意中收集了兒童的個人資訊，將會立即採取措施刪除相關資料。如果您認為您的孩子向我們提供了個人資訊，請透過下方聯絡方式與我們聯繫。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">⚖️</span>您的權利</h2>
+        <p>根據適用的資料保護法規（包括 GDPR），您擁有以下權利：</p>
+        <ul>
+            <li><strong>存取權</strong>：您有權了解我們處理了哪些與您相關的資料。</li>
+            <li><strong>更正權</strong>：您有權更正不正確的個人資料。</li>
+            <li><strong>刪除權</strong>：您有權要求刪除您的個人資料。</li>
+            <li><strong>可攜權</strong>：您有權以通用格式取得您的資料。</li>
+            <li><strong>反對權</strong>：您有權反對我們處理您的資料。</li>
+            <li><strong>撤回同意</strong>：您可以隨時撤回先前給予的同意。</li>
+        </ul>
+        <div class="highlight">
+            由於本應用程式幾乎不收集個人資料，上述大部分權利已自動滿足。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🗑️</span>資料刪除方式</h2>
+        <p>您可以透過以下方式刪除您的資料：</p>
+        <ul>
+            <li>本應用程式不永久儲存個人資料，因此通常無需特別操作。</li>
+            <li>解除安裝應用程式將移除所有本地儲存的設定資料。</li>
+            <li>您也可以透過下方電子郵件聯繫我們，提出任何資料相關的請求。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📝</span>隱私政策變更</h2>
+        <p>我們可能會不定期更新本隱私政策。任何變更將在本頁面發布，並更新「最後更新日期」。重大變更時，我們將透過應用程式內通知告知您。建議您定期查閱本隱私政策以了解最新資訊。繼續使用本應用程式即表示您接受更新後的隱私政策。</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📧</span>聯絡我們</h2>
+        <p>如果您對本隱私政策有任何疑問或建議，請透過以下方式聯繫我們：</p>
+        <ul>
+            <li><strong>開發者</strong>：JasonWu</li>
+            <li><strong>電子郵件</strong>：<a href="mailto:open5588@gmail.com">open5588@gmail.com</a></li>
+            <li><strong>地點</strong>：Taipei, Taiwan</li>
+        </ul>
+    </div>
+</div>
+
+<!-- English -->
+<div id="en" class="content">
+    <div class="section">
+        <p style="text-align:center;color:var(--text-secondary);font-size:14px;">Last Updated: March 25, 2026</p>
+        <p>JasonWu ("we", "us", or "our") developed the WirelessPresenter app (the "App"). This Privacy Policy explains how we collect, use, store, and protect your information. By using the App, you agree to the terms of this Privacy Policy.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📋</span>Information We Collect</h2>
+        <p>The App may collect or process the following information:</p>
+        <ul>
+            <li><strong>Local Network Information</strong>: Your WiFi IP address, used solely for pairing with the computer. It is not stored or transmitted to external servers.</li>
+            <li><strong>Sensor Data</strong>: Gyroscope and accelerometer data, used only for the laser pointer feature. This data is not stored or transmitted.</li>
+            <li><strong>Subscription Payment Information</strong>: Processed through the Google Play billing system. We do not directly access your payment details.</li>
+            <li><strong>Language Preferences</strong>: Your chosen app display language.</li>
+        </ul>
+        <div class="not-collected">
+            <strong>We do NOT collect:</strong> location data, contacts, microphone audio, or camera images.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔍</span>How We Use Your Information</h2>
+        <ul>
+            <li>Establish a connection between your phone and computer over the local network for presentation remote control.</li>
+            <li>Use sensor data to power the laser pointer feature.</li>
+            <li>Process subscriptions and payments (via Google Play).</li>
+            <li>Remember your language preferences for a better user experience.</li>
+        </ul>
+        <div class="highlight">
+            This App does not transmit any data to external servers. All features operate within the local network.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔗</span>Third-Party Services</h2>
+        <p>The App uses the following third-party services:</p>
+        <ul>
+            <li><strong>Google Play Billing</strong>: For processing in-app purchases and subscriptions.<br><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        </ul>
+        <div class="highlight">
+            This App does not use any cloud APIs or analytics services. Apart from Google Play Billing, no data is shared with any third parties.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🔒</span>Data Storage & Security</h2>
+        <ul>
+            <li>The App does not permanently store any sensitive data on the device.</li>
+            <li>WiFi IP addresses are used only during the connection session and discarded upon disconnection.</li>
+            <li>Sensor data is processed in real-time and is neither stored on the device nor sent to any server.</li>
+            <li>Local network communication occurs only within your local network environment.</li>
+            <li>Payment information is securely handled by Google Play. We cannot access your credit card details.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">👶</span>Children's Privacy</h2>
+        <p>The App is not designed for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected personal information from a child, we will take immediate steps to delete such data. If you believe your child has provided personal information to us, please contact us using the information below.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">⚖️</span>Your Rights</h2>
+        <p>Under applicable data protection regulations (including GDPR), you have the following rights:</p>
+        <ul>
+            <li><strong>Right of Access</strong>: You have the right to know what data we process about you.</li>
+            <li><strong>Right to Rectification</strong>: You have the right to correct inaccurate personal data.</li>
+            <li><strong>Right to Erasure</strong>: You have the right to request deletion of your personal data.</li>
+            <li><strong>Right to Portability</strong>: You have the right to receive your data in a common format.</li>
+            <li><strong>Right to Object</strong>: You have the right to object to our processing of your data.</li>
+            <li><strong>Right to Withdraw Consent</strong>: You may withdraw previously given consent at any time.</li>
+        </ul>
+        <div class="highlight">
+            Since this App collects virtually no personal data, most of the above rights are automatically satisfied.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">🗑️</span>Data Deletion</h2>
+        <p>You can delete your data through the following methods:</p>
+        <ul>
+            <li>The App does not permanently store personal data, so no special action is typically required.</li>
+            <li>Uninstalling the App will remove all locally stored settings.</li>
+            <li>You may also contact us via the email below for any data-related requests.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📝</span>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. For significant changes, we will notify you through in-app notifications. We recommend reviewing this Privacy Policy periodically. Continued use of the App constitutes acceptance of the updated Privacy Policy.</p>
+    </div>
+
+    <div class="section">
+        <h2><span class="icon">📧</span>Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us:</p>
+        <ul>
+            <li><strong>Developer</strong>: JasonWu</li>
+            <li><strong>Email</strong>: <a href="mailto:open5588@gmail.com">open5588@gmail.com</a></li>
+            <li><strong>Location</strong>: Taipei, Taiwan</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    &copy; 2026 JasonWu. All rights reserved.
+</div>
+
+<script>
+    function switchTab(lang) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
